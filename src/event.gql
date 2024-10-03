@@ -1,0 +1,8 @@
+extend type Query {
+  events(userId: Int): [Event]
+}
+
+type Event {
+  id: Int!
+  desc: String
+}

@@ -1,5 +1,5 @@
 ##
-POST http://localhost:4000/graphql
+POST http://localhost:4001/graphql
 Content-Type: application/json
 {
    "query": "query { hello }"
@@ -7,6 +7,6 @@ Content-Type: application/json
 ###
 
 #
-GET http://localhost:4000/graphql?query={hello}
+GET http://localhost:4001/graphql?query={hello}
 Content-Type: application/json
 ##
