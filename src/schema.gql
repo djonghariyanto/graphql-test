@@ -1,0 +1,15 @@
+type Query {
+  customerById: Customer
+  customerAccounts: [Account]
+}
+
+type Customer {
+  id: String!
+  name: String
+}
+
+type Account {
+  id: String!
+  type: String
+  customerId: String!
+}
