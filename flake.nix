@@ -28,6 +28,7 @@
           buildInputs = with pkgs; [
             nodejs
             typescript
+            pnpm
           ];
         };
       }

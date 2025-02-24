@@ -32,7 +32,7 @@ const userResolvers = {
   },
 };
 
-const path = process.env.NODE_ENV === "production" ? "gql" : "src";
+const path = process.env.NODE_ENV === "production" ? "gql" : "dist";
 
 const allSchema = loadSchemaSync(`${path}/**/*.gql`, {
   loaders: [new GraphQLFileLoader()],
@@ -102,4 +102,6 @@ const createEventRequest = (eventIds: number[]) => {
   );
 };
 
-export default createServer(yoga);
+const server = createServer(yoga);
+
+export default server;
